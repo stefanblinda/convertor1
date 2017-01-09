@@ -16,25 +16,25 @@ double convertKmM(){km = km * 1000;}
 //arie//
     double convertCmM2(){cm2 = cm2 / 10000;}
 
-    double convertCmKm2(){cm2 = cm2 / 10000000000;}
+    double convertCmKm2(){cm2 = cm2 / 10000000000ULL;}
 
     double convertMcm2(){m2 = m2 * 10000;}
 
     double convertMkm2(){m2 = m2 / 1000000;}
 
-    double convertKmCm2(){km2 = km2 * 10000000000;}
+    double convertKmCm2(){km2 = km2 * 10000000000ULL;}
 
     double convertKmM2(){km2 = km2* 1000000;}
 //volum//
 double convertCmM3(){cm3 = cm3 / 1000000;}
 
-double convertCmKm3(){cm3 = cm3 / 1000000000000;}
+double convertCmKm3(){cm3 = cm3 / 1000000000000ULL;}
 
 double convertMcm3(){m3 = m3 * 1000000;}
 
 double convertMkm3(){m3 = m3 / 1000000000 ;}
 
-double convertKmCm3(){km3 = km3 * 1000000000000;}
+double convertKmCm3(){km3 = km3 * 1000000000000ULL;}
 
 double convertKmM3(){km3 = km3 * 1000000000;}
 //timp/
@@ -143,7 +143,7 @@ B1:	    unsigned short c1,choise2;
 	      convertCmM();
 
 	      cout << "\n";
-	      cout << "Lungimea in Metri este " << cm << ".\n";
+	      cout << "Lungimea in Metri este " << fixed << cm << ".\n";
 
 	      cout << endl;
 	      break;
@@ -156,7 +156,7 @@ B1:	    unsigned short c1,choise2;
 	      convertCmKm();
 
 	      cout << "\n";
-	      cout << "Lungimea in Kilometri este " << cm << ".\n";
+	      cout << "Lungimea in Kilometri este " << fixed << cm << ".\n";
           cout << endl;
 	      break;
 
@@ -168,7 +168,7 @@ B1:	    unsigned short c1,choise2;
 	      convertMcm();
 
 	      cout << "\n";
-	      cout << "Lungimea in Centimetri este " << m << ".\n";
+	      cout << "Lungimea in Centimetri este " << fixed << m << ".\n";
           cout << endl;
 	      break;
 
@@ -180,7 +180,7 @@ B1:	    unsigned short c1,choise2;
 	      convertMkm();
 
 	      cout << "\n";
-	      cout << "Lungimea in Kilometri este " << m << ".\n";
+	      cout << "Lungimea in Kilometri este " << fixed << m << ".\n";
           cout << endl;
 	      break;
 
@@ -192,7 +192,7 @@ B1:	    unsigned short c1,choise2;
 	      convertKmCm();
 
 	      cout << "\n";
-	      cout << "Lungimea in Centimetri este " << km << ".\n";
+	      cout << "Lungimea in Centimetri este " << fixed << km << ".\n";
           cout << endl;
 	      break;
 
@@ -204,7 +204,7 @@ B1:	    unsigned short c1,choise2;
 	      convertKmM();
 
 	      cout << "\n";
-	      cout << "Lungimea in Centimetri este " << km << ".\n";
+	      cout << "Lungimea in Centimetri este " << fixed << km << ".\n";
           cout << endl;
 	      break;
 
@@ -250,7 +250,7 @@ case 2:
 	      convertCmM2();
 
 	      cout << "\n";
-	      cout << "Aria in Metri2 este " << cm2 << ".\n";
+	      cout << "Aria in Metri2 este " << fixed << cm2 << ".\n";
 
 	      cout << endl;
 	      break;
@@ -263,7 +263,7 @@ case 2:
 	      convertCmKm2();
 
 	      cout << "\n";
-	      cout << "Aria in Kilometri2 este " << cm2 << ".\n";
+	      cout << "Aria in Kilometri2 este " << fixed << cm2 << ".\n";
           cout << endl;
 	      break;
 
@@ -275,7 +275,7 @@ case 2:
 	      convertMcm2();
 
 	      cout << "\n";
-	      cout << "Aria in Centimetri2 este " << m2 << ".\n";
+	      cout << "Aria in Centimetri2 este " << fixed << m2 << ".\n";
           cout << endl;
 	      break;
 
@@ -287,7 +287,7 @@ case 2:
 	      convertMkm2();
 
 	      cout << "\n";
-	      cout << "Aria in Kilometri2 este " << m2 << ".\n";
+	      cout << "Aria in Kilometri2 este " << fixed << m2 << ".\n";
           cout << endl;
 	      break;
 
@@ -299,7 +299,7 @@ case 2:
 	      convertKmCm2();
 
 	      cout << "\n";
-	      cout << "Aria in Centimetri2 este " << km2 << ".\n";
+	      cout << "Aria in Centimetri2 este " << fixed << km2 << ".\n";
           cout << endl;
 	      break;
 
@@ -311,7 +311,7 @@ case 2:
 	      convertKmM2();
 
 	      cout << "\n";
-	      cout << "Aria in Centimetri2 este " << km2 << ".\n";
+	      cout << "Aria in Centimetri2 este " << fixed << km2 << ".\n";
           cout << endl;
 	      break;
 
@@ -357,7 +357,7 @@ case 3:
 	      convertCmM3();
 
 	      cout << "\n";
-	      cout << "Volumul in Metri3 este " << cm3 << ".\n";
+	      cout << "Volumul in Metri3 este " << fixed << cm3 << ".\n";
 
 	      cout << endl;
 	      break;
@@ -370,7 +370,7 @@ case 3:
 	      convertCmKm3();
 
 	      cout << "\n";
-	      cout << "Volumul in Kilometri3 este " << cm3 << ".\n";
+	      cout << "Volumul in Kilometri3 este " << fixed << cm3 << ".\n";
           cout << endl;
 	      break;
 
@@ -382,7 +382,7 @@ case 3:
 	      convertMcm3();
 
 	      cout << "\n";
-	      cout << "Volumul in Centimetri3 este " << m3 << ".\n";
+	      cout << "Volumul in Centimetri3 este " << fixed << m3 << ".\n";
           cout << endl;
 	      break;
 
@@ -394,7 +394,7 @@ case 3:
 	      convertMkm3();
 
 	      cout << "\n";
-	      cout << "Volumul in Kilometri3 este " << m3 << ".\n";
+	      cout << "Volumul in Kilometri3 este " << fixed << m3 << ".\n";
           cout << endl;
 	      break;
 
@@ -406,7 +406,7 @@ case 3:
 	      convertKmCm3();
 
 	      cout << "\n";
-	      cout << "Volumul in Centimetri3 este " << km3 << ".\n";
+	      cout << "Volumul in Centimetri3 este " << fixed << km3 << ".\n";
           cout << endl;
 	      break;
 
@@ -418,7 +418,7 @@ case 3:
 	      convertKmM3();
 
 	      cout << "\n";
-	      cout << "Volumul in Centimetri3 este " << km3 << ".\n";
+	      cout << "Volumul in Centimetri3 este " << fixed << km3 << ".\n";
           cout << endl;
 	      break;
 
@@ -465,7 +465,7 @@ B4:	    unsigned short c4;
 	      convertSecMin();
 
 	      cout << "\n";
-	      cout << "Timpul in Minute este " << sec << ".\n";
+	      cout << "Timpul in Minute este " << fixed << sec << ".\n";
 
 	      cout << endl;
 	      break;
@@ -478,7 +478,7 @@ B4:	    unsigned short c4;
 	      convertSecH();
 
 	      cout << "\n";
-	      cout << "Timpul in Ore este " << sec << ".\n";
+	      cout << "Timpul in Ore este " << fixed << sec << ".\n";
           cout << endl;
 	      break;
 
@@ -490,7 +490,7 @@ B4:	    unsigned short c4;
 	      convertMinSec();
 
 	      cout << "\n";
-	      cout << "Timpul in Secunde este " << mi << ".\n";
+	      cout << "Timpul in Secunde este " << fixed << mi << ".\n";
           cout << endl;
 	      break;
 
@@ -502,7 +502,7 @@ B4:	    unsigned short c4;
 	      convertMinH();
 
 	      cout << "\n";
-	      cout << "Timpul in Ore este " << mi << ".\n";
+	      cout << "Timpul in Ore este " << fixed << mi << ".\n";
           cout << endl;
 	      break;
 
@@ -514,7 +514,7 @@ B4:	    unsigned short c4;
 	      convertHsec();
 
 	      cout << "\n";
-	      cout << "Timpul in Secunde este " << h << ".\n";
+	      cout << "Timpul in Secunde este " << fixed << h << ".\n";
           cout << endl;
 	      break;
 
@@ -526,7 +526,7 @@ B4:	    unsigned short c4;
 	      convertHmin();
 
 	      cout << "\n";
-	      cout << "Timpul in Minute este " << h << ".\n";
+	      cout << "Timpul in Minute este " << fixed << h << ".\n";
           cout << endl;
 	      break;
 
@@ -568,7 +568,7 @@ B5:	    unsigned short c5;
 	      convertKhMlh();
 
 	      cout << "\n";
-	      cout << "Viteza in Mile/ora este " << kh << ".\n";
+	      cout << "Viteza in Mile/ora este " << fixed << kh << ".\n";
           cout << endl;
 	      break;
 
@@ -580,7 +580,7 @@ B5:	    unsigned short c5;
 	      convertKhMs();
 
 	      cout << "\n";
-	      cout << "Viteza in Metri/secunda este " << kh << ".\n";
+	      cout << "Viteza in Metri/secunda este " << fixed << kh << ".\n";
           cout << endl;
 	      break;
 
@@ -623,7 +623,7 @@ case 6:
 	      convertCf();
 
 	      cout << "\n";
-	      cout << "Temperatura in Fahrenheit este " << celsius << ".\n";
+	      cout << "Temperatura in Fahrenheit este " << fixed << celsius << ".\n";
 
 	      cout << endl;
 	      break;
@@ -636,7 +636,7 @@ case 6:
 	      convertFc();
 
 	      cout << "\n";
-	      cout << "Temperatura in Celsius este " << fahrenheit << ".\n";
+	      cout << "Temperatura in Celsius este " << fixed << fahrenheit << ".\n";
           cout << endl;
 	      break;
 
@@ -683,7 +683,7 @@ B7:	    unsigned short c7;
 	      convertMgG();
 
 	      cout << "\n";
-	      cout << "Masa in Grame este " << mg << ".\n";
+	      cout << "Masa in Grame este " << fixed << mg << ".\n";
 
 	      cout << endl;
 	      break;
@@ -696,7 +696,7 @@ B7:	    unsigned short c7;
 	      convertMgKg();
 
 	      cout << "\n";
-	      cout << "Masa in Kilograme este " << mg << ".\n";
+	      cout << "Masa in Kilograme este " << fixed << mg << ".\n";
           cout << endl;
 	      break;
 
@@ -708,7 +708,7 @@ B7:	    unsigned short c7;
 	      convertGmg();
 
 	      cout << "\n";
-	      cout << "Masa in Miligrame este " << g << ".\n";
+	      cout << "Masa in Miligrame este " << fixed << g << ".\n";
           cout << endl;
 	      break;
 
@@ -720,7 +720,7 @@ B7:	    unsigned short c7;
 	      convertGkg();
 
 	      cout << "\n";
-	      cout << "Masa in Kilograme este " << g << ".\n";
+	      cout << "Masa in Kilograme este " << fixed << g << ".\n";
           cout << endl;
 	      break;
 
@@ -732,7 +732,7 @@ B7:	    unsigned short c7;
 	      convertKgMg();
 
 	      cout << "\n";
-	      cout << "Masa in Miligrame este " << kg << ".\n";
+	      cout << "Masa in Miligrame este " << fixed << kg << ".\n";
           cout << endl;
 	      break;
 
@@ -744,7 +744,7 @@ B7:	    unsigned short c7;
 	      convertKgG();
 
 	      cout << "\n";
-	      cout << "Masa in Grame este " << kg << ".\n";
+	      cout << "Masa in Grame este " << fixed << kg << ".\n";
           cout << endl;
 	      break;
 
@@ -791,7 +791,7 @@ B8:	    unsigned short c8;
 	      convertJcal();
 
 	      cout << "\n";
-	      cout << "Energia in Calorii este " << j << ".\n";
+	      cout << "Energia in Calorii este " << fixed << j << ".\n";
           cout << endl;
 	      break;
 
@@ -803,7 +803,7 @@ B8:	    unsigned short c8;
 	      convertJwh();
 
 	      cout << "\n";
-	      cout << "Energia in Watts/h este " << j << ".\n";
+	      cout << "Energia in Watts/h este " << fixed << j << ".\n";
           cout << endl;
 	      break;
 
@@ -815,7 +815,7 @@ B8:	    unsigned short c8;
 	      convertCalJ();
 
 	      cout << "\n";
-	      cout << "Energia in Jouli este " << cal << ".\n";
+	      cout << "Energia in Jouli este " << fixed << cal << ".\n";
           cout << endl;
 	      break;
 
@@ -827,7 +827,7 @@ B8:	    unsigned short c8;
 	      convertCalWs();
 
 	      cout << "\n";
-	      cout << "Energia in Watts/h este " << cal << ".\n";
+	      cout << "Energia in Watts/h este " << fixed << cal << ".\n";
           cout << endl;
 	      break;
 
@@ -839,7 +839,7 @@ B8:	    unsigned short c8;
 	      convertWhJ();
 
 	      cout << "\n";
-	      cout << "Energia in Joulie este " << wh << ".\n";
+	      cout << "Energia in Joulie este " << fixed << wh << ".\n";
           cout << endl;
 	      break;
 
@@ -851,7 +851,7 @@ B8:	    unsigned short c8;
 	      convertWhCal();
 
 	      cout << "\n";
-	      cout << "Energia in Calorii este " << wh << ".\n";
+	      cout << "Energia in Calorii este " << fixed << wh << ".\n";
           cout << endl;
 	      break;
 
@@ -893,7 +893,7 @@ B9:	    unsigned short c9;
 	      convertBarPsi();
 
 	      cout << "\n";
-	      cout << "Presiunea in Funti pe tol patrat este " << bar << ".\n";
+	      cout << "Presiunea in Funti pe tol patrat este " << fixed << bar << ".\n";
           cout << endl;
 	      break;
 
@@ -905,7 +905,7 @@ B9:	    unsigned short c9;
 	      convertPsiBar();
 
 	      cout << "\n";
-	      cout << "Presiunea in Bari este " << psi << ".\n";
+	      cout << "Presiunea in Bari este " << fixed << psi << ".\n";
           cout << endl;
 	      break;
 
@@ -952,7 +952,7 @@ B10:	    unsigned short c10;
 	      convertMgG3();
 
 	      cout << "\n";
-	      cout << "Densitatea in Grame/m3 este " << mg3 << ".\n";
+	      cout << "Densitatea in Grame/m3 este " << fixed << mg3 << ".\n";
 
 	      cout << endl;
 	      break;
@@ -965,7 +965,7 @@ B10:	    unsigned short c10;
 	      convertMgKg3();
 
 	      cout << "\n";
-	      cout << "Densitatea in Kilograme/m3 este " << mg3 << ".\n";
+	      cout << "Densitatea in Kilograme/m3 este " << fixed << mg3 << ".\n";
           cout << endl;
 	      break;
 
@@ -977,7 +977,7 @@ B10:	    unsigned short c10;
 	      convertGmg3();
 
 	      cout << "\n";
-	      cout << "Densitatea in Miligrame/m3 este " << g3 << ".\n";
+	      cout << "Densitatea in Miligrame/m3 este " << fixed << g3 << ".\n";
           cout << endl;
 	      break;
 
@@ -989,7 +989,7 @@ B10:	    unsigned short c10;
 	      convertGkg3();
 
 	      cout << "\n";
-	      cout << "Densitatea in Kilograme/m3 este " << g3 << ".\n";
+	      cout << "Densitatea in Kilograme/m3 este " << fixed << g3 << ".\n";
           cout << endl;
 	      break;
 
@@ -1001,7 +1001,7 @@ B10:	    unsigned short c10;
 	      convertKgMg3();
 
 	      cout << "\n";
-	      cout << "Densitatea in Miligrame/m3 este " << kg3 << ".\n";
+	      cout << "Densitatea in Miligrame/m3 este " << fixed << kg3 << ".\n";
           cout << endl;
 	      break;
 
@@ -1013,7 +1013,7 @@ B10:	    unsigned short c10;
 	      convertKgG3();
 
 	      cout << "\n";
-	      cout << "Densitatea in Grame/m3 este " << kg3 << ".\n";
+	      cout << "Densitatea in Grame/m3 este " << fixed << kg3 << ".\n";
           cout << endl;
 	      break;
 
@@ -1055,7 +1055,7 @@ B11:	    unsigned short c11;
 	      convertLkMlg();
 
 	      cout << "\n";
-	      cout << "Consumul de combustibil in Mile/galon este " << lk << ".\n";
+	      cout << "Consumul de combustibil in Mile/galon este " << fixed << lk << ".\n";
           cout << endl;
 	      break;
 
@@ -1067,7 +1067,7 @@ B11:	    unsigned short c11;
 	      convertLkKl();
 
 	      cout << "\n";
-	      cout << "Consumul de combustibil in Kilometri/litru este " << lk << ".\n";
+	      cout << "Consumul de combustibil in Kilometri/litru este " << fixed << lk << ".\n";
           cout << endl;
 	      break;
 
